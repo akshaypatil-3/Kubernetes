@@ -1,4 +1,4 @@
-# Kubernetes
+# ***Kubernetes***
 
 To understand K8s
 
@@ -18,29 +18,29 @@ ___`Service`___ - expose application in network
 - ***LoadBalancer*** - Expose application outside the cluster using cloud loadbalancers
 
 
-`Volume` - mount on pods
+___`Volume`___ - mount on pods
 
 - ***persitent volume*** - will last after the pod dies
 - ***ephemeral volume*** - will last till pod running
 
 
-`Namespaces` - segregate the objects/resources
+___`Namespaces`___ - segregate the objects/resources
 
-`Deployments` - manage multiple pods and provides scaling, strategy, and rollback features.
+___`Deployments`___ - manage multiple pods and provides scaling, strategy, and rollback features.
 
-`ReplicationController` - It ensure that the correct number of pod replicas are running on the cluster. Uses equility-based selector.
+___`ReplicationController`___ - It ensure that the correct number of pod replicas are running on the cluster. Uses equility-based selector.
 
-`ReplicaSet` - It ensure that the correct number of pod replicas are running on the cluster. Uses in, notin, exists operator based selector.
+___`ReplicaSet`___ - It ensure that the correct number of pod replicas are running on the cluster. Uses in, notin, exists operator based selector.
 
-`DaemonSet` - To create pod on all nodes / specific node similar to daemon
+___`DaemonSet`___ - To create pod on all nodes / specific node similar to daemon
 
-`StatefulSet` - Will provide unique indentities to pods even it restarts
+___`StatefulSet`___ - Will provide unique indentities to pods even it restarts
 
-`ConfigMaps / Secrets` - Use to store the credential
+___`ConfigMaps / Secrets`___ - Use to store the credential
 
 -----------------
 
-## Kubernetes Cheat Sheet
+## ***Kubernetes Cheat Sheet***
 --------
 - `kubectl get nodes` - list all nodes present in the cluster
 
