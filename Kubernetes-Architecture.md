@@ -1,6 +1,6 @@
 # ***Kubernetes Architecture***
 -----------------------------------------------
-![kubernetes-archetecture](https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg)
+![kubernetes-archetecture](https://github.com/akshaypatil-3/Kubernetes/blob/main/images/WhatsApp%20Image%202022-10-16%20at%2011.31.13%20PM.jpeg)
 -----------------------------------------------
 >Kubernetes architecture contains clusters, each kubernetes cluster contains two types of node master node and worker node, master node also called as master plane and control plane and worker node also called as slave node.
 The responsibility of the control plane is to manage the deployment on the worker node, the control plane consists of four components: API server, Scheduler, Control manager and ETCD.
