@@ -14,8 +14,13 @@ The responsibility of the control plane is to manage the deployment on the worke
 >***`ETCD`*** is responsible to store all the state related information of the worker nodes such as  how many pods are running in which worker node, how many worker nodes are there and which worker node is unavailable, all information stored in etcd. It is accessible only by Kubernetes API server for security reasons.
 
 >Then lets toward the worker node actual deployment happen over the worker node like the actual application, containers and pods are going to deploy on the worker node, inside the worker node there are four components present among this two major component one are kublet and kubeproxy 
+
 >`Kubelets` which is responsible to execute the command which is given by the scheduler. It regularly taking in new or modified specifications from etcd through the api server and ensuring that pods and their containers are healthy and running in the desired state
->`kube proxy` is responsible to communicate within the cluster. 
-container tool it is the container engine just like docker which is going to execute or run the container inside the pods.
-pods are the smallest unit of the deployment in which one or more than one container can be created.
+
+>`kube proxy` is responsible to communicate within the cluster. It is a proxy service that runs on each worker node helps in making services available to the external host.
+  It performs request forwarding to the correct pods/containers across the various isolated networks in a cluster. It manages pods on node, volumes, secrets, creating new containers health checkup, etc.
+
+>`container tool` it is the container engine just like docker which is going to execute or run the container inside the pods.
+
+>`pods` are the smallest unit of the deployment in which one or more than one container can be created.
 ---
