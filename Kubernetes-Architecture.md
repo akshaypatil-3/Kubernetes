@@ -5,8 +5,7 @@
 >Kubernetes architecture contains clusters, each kubernetes cluster contains two types of node master node and worker node, master node also called as master plane or control plane, and worker node also called as slave node.
 The responsibility of the control plane is to manage the deployment on the worker node, the control plane consists of four components: API server, Scheduler, Control manager and ETCD.
 
->***`API`*** server will handle all the communication or all the connection between user, control plane and worker node, whereas 
-
+>***`API`*** server will handle all the communication or all the connection between user, control plane and worker node, It serves as front end to the cluster. This is the only component that communicates with the etcd cluster, making sure data is stored in etcd, It is the central management entity that receives all REST requests for modifications to pods, services, replication sets/controllers and others.
 >***`scheduler`*** is responsible to send the command to the worker node. It is responsible for distributing (or schedule) the workload on the various worker nodes based on resource utilization.
 
 >The ***`control manager`*** controls all the activity inside the worker node like how many replicas are to be created, how many containers are to be managed, how many pods should be there and what are the desired capacity, min capacity, maximum capacity of the pods all will be managed by the control manager. even in which worker node pod should be created also managed by the control manager
